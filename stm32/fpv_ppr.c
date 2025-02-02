@@ -101,7 +101,7 @@ static void MX_GPIO_Init(void)
 static void MX_USART2_UART_Init(void)
 {
     RCC->APB1ENR |= RCC_APB1ENR_USART2EN; // Включение тактирования USART2
-    USART2->BRR = 0x1A1; // Установка скорости передачи (например, 9600)
+    USART2->BRR = 0x1A1; // Установка скорости передачи (например, 9600, 115200)
     USART2->CR1 |= USART_CR1_TE; // Включение передатчика
     USART2->CR1 |= USART_CR1_UE; // Включение USART
 }
